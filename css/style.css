@@ -1,7 +1,48 @@
-body {}
-
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+    transition: .3s;
+}
+
+.section-item a {
+    color: #829985;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.section-item a:hover {
+    color: #4d2323;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    border: 1px solid red;
+}
+
+main {
+    border: 1px solid red;
+}
+
+footer {
+    border: 1px solid red;
 }
 
 h1 {
