@@ -14,12 +14,12 @@ body {
     margin: 0 0;
 }
 
-.header {
+header {
     background-color: #000000;
     padding: 10px;
 }
 
-.footer {
+footer {
     background-color: #000000;
     padding: 10px;
 }
@@ -35,8 +35,21 @@ body {
     padding: 0 20px;
     line-height: 50px;
     color: #ffffff;
-    transition: .3s;
+    transition: 0.3s;
     text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #cf5454;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 50px;
 }
 
 .main-container {
@@ -45,11 +58,11 @@ body {
     justify-content: space-between;
 }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;
-    min-height: 50px;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
 }
 
 .section {
@@ -69,6 +82,12 @@ body {
 
 .section-item a {
     color: #2e1e1e;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.section-item a:hover {
+    color: #cf5454;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -118,6 +137,14 @@ body {
     margin: 10px 0;
     padding: 0;
     list-style: none;
+}
+
+.rss {
+    width: 120px;
+    height: 45px;
+    background-image: url('../assets/image/rss.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
