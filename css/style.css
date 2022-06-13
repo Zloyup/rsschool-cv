@@ -3,22 +3,25 @@ html {
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0;
 }
 
 .header {
     background-color: #000000;
-    border: 1px solid red;
-}
-
-.main {
-    border: 1px solid red;
+    padding: 10px;
 }
 
 .footer {
-    border: 1px solid red;
+    background-color: #000000;
+    padding: 10px;
 }
 
 .nav-list {
@@ -31,7 +34,6 @@ html {
 .nav-link {
     padding: 0 20px;
     line-height: 50px;
-    font-family: 'Nanum Gothic', sans-serif;
     color: #ffffff;
     transition: .3s;
     text-decoration: none;
@@ -51,27 +53,42 @@ html {
 }
 
 .section {
-    width: 50%;
-    border-bottom: 1px solid #0011ff;
+    width: calc(50% - 10px);
+    border-bottom: 1px solid #818181;
+    padding: 5px;
+}
+
+.section-profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .section-item a {
-    color: #829985;
+    color: #2e1e1e;
     text-decoration: none;
     transition: color 0.5s;
 }
 
-.section-item a:hover {
-    color: #4d2323;
-}
-
 .section-title {
-    font-family: 'Nanum Gothic', sans-serif;
     margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 5px;
+    color: #661515;
+}
+
+.section-title-main {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 50px;
 }
 
 .section-profile {
@@ -98,7 +115,7 @@ html {
 }
 
 .section-list {
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
     list-style: none;
 }
@@ -107,14 +124,4 @@ html {
     .section {
         width: 100%;
     }
-}
-
-h1 {
-    font-family: 'Nanum Gothic', sans-serif;
-    /* Шрифт заголовков */
-}
-
-h2 {
-    font-family: 'Cinzel', serif;
-    /* Шрифт основного текста */
 }
